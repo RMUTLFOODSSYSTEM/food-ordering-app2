@@ -1,0 +1,120 @@
+/* 📌 ตั้งค่าพื้นฐานสำหรับหน้าประวัติผู้ใช้ */
+.profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* 📝 หัวข้อ */
+  .profile-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* 📋 ข้อมูลผู้ใช้ */
+  .profile-info {
+    margin-bottom: 30px;
+  }
+  
+  .profile-info p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .profile-info strong {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  /* 🛒 ประวัติการสั่งซื้อ */
+  .order-history {
+    margin-top: 20px;
+  }
+  
+  .order-history h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .order-history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-history li {
+    background: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-history li p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .order-history li p strong {
+    color: #3498db;
+  }
+  
+  /* 🛑 หากผู้ใช้ยังไม่เคยสั่งซื้อ */
+  .order-history p {
+    font-style: italic;
+    color: #7f8c8d;
+  }
+  
+  /* 📱 Responsive Design สำหรับมือถือและแท็บเล็ต */
+  @media (max-width: 768px) {
+    .profile-container {
+      padding: 15px;
+    }
+  
+    .profile-container h2 {
+      font-size: 24px;
+    }
+  
+    .profile-info p {
+      font-size: 16px;
+    }
+  
+    .order-history h3 {
+      font-size: 18px;
+    }
+  
+    .order-history li p {
+      font-size: 14px;
+    }
+  }
+  
+  /* สำหรับหน้าจอเล็กมาก (มือถือขนาดเล็ก) */
+  @media (max-width: 480px) {
+    .profile-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .profile-container h2 {
+      font-size: 20px;
+    }
+  
+    .profile-info p {
+      font-size: 14px;
+    }
+  
+    .order-history h3 {
+      font-size: 16px;
+    }
+  
+    .order-history li p {
+      font-size: 12px;
+    }
+  }
+  

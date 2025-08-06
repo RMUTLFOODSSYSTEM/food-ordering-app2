@@ -1,0 +1,236 @@
+/* 📌 ตั้งค่าพื้นฐานสำหรับตะกร้าสินค้า */
+.cart-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+/* 🛒 หัวข้อ */
+.cart-header {
+  font-size: 36px;
+  font-weight: 700;
+  color: #4CAF50; /* เขียวสด 7-11 */
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* 🛍️ รายการสินค้า */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 75px;
+  height: 75px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-item .item-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.cart-item .item-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-item .item-price {
+  font-size: 16px;
+  color: #666;
+}
+
+/* ❌ ปุ่มลบสินค้า */
+.remove-item-button {
+  background: #F44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.remove-item-button:hover {
+  background: #D32F2F;
+}
+
+/* 💳 ปุ่มชำระเงิน */
+.checkout-button {
+  background: #2196F3;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.checkout-button:hover {
+  background: #1976D2;
+  transform: scale(1.05);
+}
+
+/* 💰 ราคาสินค้ารวม */
+.cart-total {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  text-align: right;
+  margin-top: 30px;
+}
+
+/* 🛒 ตะกร้าว่าง */
+.empty-cart {
+  font-size: 20px;
+  font-style: italic;
+  color: #757575;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* 📱 Responsive Design สำหรับมือถือและแท็บเล็ต */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 20px;
+  }
+
+  .cart-header {
+    font-size: 30px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-item .item-details {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .checkout-button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+/* สำหรับหน้าจอเล็กมาก (มือถือขนาดเล็ก) */
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 15px;
+  }
+
+  .cart-header {
+    font-size: 24px;
+  }
+
+  .cart-item {
+    padding: 12px;
+  }
+
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cart-item .item-name {
+    font-size: 16px;
+  }
+
+  .cart-item .item-price {
+    font-size: 14px;
+  }
+
+  .checkout-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+/* ปุ่มเพิ่ม/ลด ปริมาณสินค้า */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background-color: #aaaaaa; /* เขียวสด 7-11 */
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity-controls button:hover {
+  background-color: #388E3C; /* สีเขียวเข้ม */
+  transform: scale(1.1); /* ขยายปุ่มเมื่อโฮเวอร์ */
+}
+
+.quantity-controls button:active {
+  transform: scale(1); /* เมื่อคลิกให้ขนาดปุ่มกลับไปที่เดิม */
+}
+
+.quantity-controls span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ปรับให้ปุ่มดูเหมาะสมในมือถือ */
+@media (max-width: 768px) {
+  .quantity-controls button {
+    padding: 8px 15px;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .quantity-controls span {
+    font-size: 16px;
+  }
+}

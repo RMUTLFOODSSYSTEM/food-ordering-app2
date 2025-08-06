@@ -1,0 +1,56 @@
+.menu-container {
+    padding: 20px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .item-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .addon-container {
+    margin-top: 10px;
+  }
+  
+  .addon-label {
+    margin-right: 10px;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .go-to-cart {
+    margin-top: 20px;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .go-to-cart:hover {
+    background-color: #007B9A;
+  }
+  

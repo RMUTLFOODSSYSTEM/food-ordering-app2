@@ -1,0 +1,95 @@
+.payment-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.qr-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.qr-code {
+  margin-top: 10px;
+}
+
+.payment-proof {
+  margin-top: 20px;
+}
+
+.payment-proof label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.payment-proof input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.payment-proof input[type="file"] {
+  padding: 8px;
+}
+
+.proof-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.proof-image {
+  max-width: 200px;
+  max-height: 150px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.empty-cart-message {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 20px;
+  background-color: #4CAF50; /* สีเขียวที่ใช้สำหรับปุ่มชำระเงิน */
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: #45a049; /* สีที่เปลี่ยนเมื่อ hover */
+}
+
+.payment-button:active {
+  background-color: #388e3c; /* สีที่เปลี่ยนเมื่อคลิก */
+}
+
+.payment-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

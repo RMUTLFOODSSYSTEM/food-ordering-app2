@@ -1,0 +1,172 @@
+/* Navbar Wrapper */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;          /* ใช้ 100% แทน 100vw เพื่อป้องกัน scroll แนวนอน */
+  max-width: 100%;
+  left: 0;
+
+  box-sizing: border-box;
+}
+
+/* Main container สำหรับเนื้อหาภายใน navbar */
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; /* เว้น padding ซ้ายขวา */
+  box-sizing: border-box;
+}
+
+/* Inner Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #28a745;
+  text-decoration: none;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #28a745;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Animation for toggle icon */
+.rotate-top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.rotate-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hide {
+  opacity: 0;
+}
+
+/* Menu */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu li a,
+.navbar-menu li button {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #28a745;
+}
+
+/* Buttons */
+.login-btn {
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  border: none;
+}
+
+.register-btn {
+  background-color: white;
+  color: #28a745;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* เพิ่มให้เมนูทับ navbar อื่น */
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    width: 100%;
+  }
+
+  .navbar-menu li a,
+  .navbar-menu li button {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* Large Screens (PC) */
+@media (min-width: 1200px) {
+  .navbar-container {
+    padding: 1rem 2rem;
+  }
+
+  .navbar-menu li a,
+  .navbar-menu li button {
+    font-size: 1.05rem;
+  }
+
+  .login-btn,
+  .register-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+  }
+}
