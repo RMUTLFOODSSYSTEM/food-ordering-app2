@@ -8,7 +8,7 @@ function Home() {
     <div>
 
       <section id="home" className="hero main-container">
-        <h1>ยินดีต้อนรับสู่ <span className="bold">RMUTL Food Ordering System</span></h1>
+        <h1>ยินดีต้อนรับสู่ <span className="bold">RMUTL Food Ordering System</span></h1><br />
         <p>
           ระบบสั่งอาหารและสินค้าสำหรับนักศึกษาและบุคลากร RMUTL<br />
           สะดวก รวดเร็ว ไม่ต้องรอนาน
@@ -16,7 +16,7 @@ function Home() {
       </section>
 
       <section id="about" className="about main-container">
-        <h2>เกี่ยวกับเรา</h2>
+        <h2>เกี่ยวกับเรา</h2><br />
         <p>
           เราคือระบบสั่งอาหารออนไลน์สำหรับนักศึกษา RMUTL 
           ช่วยให้การซื้อขายสะดวกขึ้น ลดเวลารอคิว 

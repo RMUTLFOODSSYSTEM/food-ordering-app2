@@ -7,7 +7,7 @@ import Payment from "./store/pages/Payment.jsx";
 import Login from "./store/pages/Login.jsx";
 import Register from "./store/pages/Register.jsx";
 import Navbar from "./store/components/Navbar.jsx";
-import Profile from "./store/pages/Register.jsx"; // นำเข้า Profile
+import Profile from "./store/pages/Profile.jsx"; // นำเข้า Profile
 import Notification from "./store/pages/Notification.jsx";// นำเข้า Notification
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/profile" element={<Profile />} /> {/* เพิ่ม route สำหรับ Profile */}
+          <Route path="/Profile" element={<Profile />} /> {/* เพิ่ม route สำหรับ Profile */}
           <Route path="/notifications" element={<Notification />} /> {/* เพิ่ม route สำหรับ Notification */}
         </Routes>
       </Router>
